@@ -11,7 +11,7 @@
 const sortArrayByParity = function(nums) {
     const arr = [];
     for (let i = nums.length -1; i >= 0; i--) {
-        if (nums[i] % 2 == 0) {
+        if (nums[i] % 2 === 0) {
             arr.push(nums.pop(nums[i]));
         }
     }
@@ -24,7 +24,7 @@ const sortArrayByParity = function(nums) {
 const sortArrayByParity = function(nums) {
     const arr = [];
     for (let i = nums.length -1; i >= 0; i--) {
-        if (nums[i] % 2 == 0) {
+        if (nums[i] % 2 === 0) {
             arr.unshift(nums.pop(nums[i]));
         } else {
             arr.push(nums.pop(nums[i]));
