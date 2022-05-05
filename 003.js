@@ -1,4 +1,6 @@
 // 3. Longest Substring Without Repeating Characters
+// Runtime: 112 ms, faster than 70.87% of JavaScript online submissions for Longest Substring Without Repeating Characters.
+//Memory Usage: 46.1 MB, less than 84.33% of JavaScript online submissions for Longest Substring Without Repeating Characters.
 
 /**
  * @param {string} s
