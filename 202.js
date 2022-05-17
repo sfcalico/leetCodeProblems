@@ -16,3 +16,24 @@ var isHappy = function(n) {
     }
     return isHappy(num);
 };
+
+// Second Submission, runtime error
+const isHappy = function(n) {
+    let set = new Set();
+    if (n < 1) {
+        return false;
+    } else if (n === 1) {
+        return true;
+    }
+    let str = n.toString();
+    let num = 0;
+    for (let number of str) {
+        num += number * number;
+    }
+    if (set.has(num)) {
+        return false;
+    } else {
+        set.add(num);
+    }
+    return isHappy(num);
+};
