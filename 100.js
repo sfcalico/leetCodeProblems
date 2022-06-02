@@ -28,3 +28,19 @@ const isSameTree = function(p, q) {
     }
     return false;
 };
+
+// second attempt, first submission, accepted
+// Runtime: 55 ms, faster than 97.35% of JavaScript online submissions for Same Tree.
+// Memory Usage: 42.6 MB, less than 27.39% of JavaScript online submissions for Same Tree.
+
+const isSameTree = function(p, q) {
+    if (p === null && q === null) {
+        return true;
+    } else if (p === null || q === null) {
+        return false;
+    } else if (p.val !== q.val) {
+        return false;
+    } else {
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+    }
+};
